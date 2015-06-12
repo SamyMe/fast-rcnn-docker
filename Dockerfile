@@ -5,7 +5,7 @@ RUN apt-get update && \
 	apt-get install -y git python-numpy cython python-pip python-skimage \
 	python-protobuf python-opencv python-pandas python-yaml
 
-RUN	pip install easydict
+RUN	pip install easydict && pip install "ipython[notebook]"
 
 # build fast-rcnn
 RUN cd /opt && \
