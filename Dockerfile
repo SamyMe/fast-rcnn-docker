@@ -3,7 +3,7 @@ MAINTAINER Chris Chow <chris.kr.chow@gmail.com>
 # install fast-rcnn's deps
 RUN apt-get update && \
 	apt-get install -y git python-numpy cython python-pip python-skimage \
-	python-protobuf python-opencv python-pandas python-yaml
+	python-protobuf python-opencv python-pandas python-yaml python-sklearn
 
 RUN	pip install easydict && pip install "ipython[notebook]"
 
